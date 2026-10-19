@@ -2,7 +2,7 @@
 // ไฟล์ของแอป: ดึงจากเน็ตก่อน ถ้าไม่มีเน็ตใช้ของที่เก็บไว้
 // Leaflet และฟอนต์: ใช้ของที่เก็บไว้ก่อน
 // ข้อมูลจากชีต (script.google.com) ไม่ผ่านตัวนี้ แอปเก็บเองใน localStorage
-const CACHE = "shanghai-trip-app-v5";
+const CACHE = "shanghai-trip-app-v6";
 const FILES = ["./", "index.html", "config.js", "snapshot.js", "manifest.webmanifest", "icon.svg", "icon-180.png", "icon-512.png",
   "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css", "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"];
 
