@@ -744,7 +744,7 @@ nav.tabs button[aria-selected="true"] em { display: inline; }
       html += '<div class="h-big" style="font-size:32px">กองกลาง<br>ของแก๊ง 💰</div><p class="lead">Marck ถือเงิน · บันทึกค่าใช้จ่ายลงชีต</p><div class="card soft">' + (!cfg.api ? "ยังไม่ได้ต่อเว็บแอปกับชีต" : "ใส่รหัสลับของแก๊งในหน้าตั้งค่า (☰ มุมซ้ายบน) เพื่อดูและบันทึกกองกลาง") + "</div>";
       $("view-pool").innerHTML = html; return;
     }
-    var cats = p.categoriesAllowed || ["🍜 อาหาร", "🚄 รถไฟหางโจว"];
+    var cats = p.categoriesAllowed || ["🍜 อาหาร", "🚕 ค่าเดินทาง", "🚄 รถไฟหางโจว"];
     var get = function (re) { var x = p.summary.filter(function (s) { return re.test(s.label); })[0]; return x ? x.value : "—"; };
     html += '<div class="ready" style="cursor:default"><div class="row"><span>เงินสดในกองตอนนี้</span><span class="pct" style="font-size:30px">฿' + esc(get(/เงินสดในกอง/)) + '</span></div><small style="display:block;margin-top:6px">งบที่ยังใช้ได้ต่อคน ฿' + esc(get(/งบที่ยังใช้ได้/)) + " · 1 หยวน = " + esc(p.rate) + " บาท</small></div>";
     html += '<div class="card"><h3>➕ บันทึกค่าใช้จ่าย</h3><form class="form" id="pool-form" autocomplete="off">' +
